@@ -173,7 +173,7 @@ template {
 
   --text-color: var(--color-black);
   --valid-color: var(--color-green);
-  --error-color: var(--color-red)
+  --error-color: var(--color-red);
 
   --font-family-base: "Open Sans", "Helvetica Neue", Helvetica, Arial,
     sans-serif;
@@ -307,12 +307,12 @@ a:active {
   transition-property: color, background-color;
 }
 .button-primary {
-    color: var(--color-white);
-    background: var(--color-primary);
+  color: var(--color-white);
+  background: var(--color-primary);
 }
 .button-primary:hover {
-    color: var(--color-primary);
-    background: var(--color-white);
+  color: var(--color-primary);
+  background: var(--color-white);
 }
 
 /* Helpers
@@ -932,13 +932,14 @@ input:not(:placeholder-shown) ~ .form-field-icon::after {
 
 /* Because inputs are invalid by default, we need to be careful and show the icon when we are not in focus and when when the input is not empty (placeholder-shown). Careful with this one because it is not supported everywhere. */
 
-input:required:invalid:not(:focus):not(:placeholder-shown) ~ .form-field-icon::after {
-  content: '✘';
+input:required:invalid:not(:focus):not(:placeholder-shown)
+  ~ .form-field-icon::after {
+  content: "✘";
   color: var(--error-color);
 }
 
 input:required:valid ~ .form-field-icon::after {
-  content: '✔';
+  content: "✔";
   color: var(--valid-color);
 }
 
