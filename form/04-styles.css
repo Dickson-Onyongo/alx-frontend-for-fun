@@ -850,9 +850,8 @@ textarea {
   outline: 0;
 }
 
-input .type,
-.text,
-.email {
+input[type="text"],
+input[type="email"] {
   padding-right: 3rem;
 }
 
