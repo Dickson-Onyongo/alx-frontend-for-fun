@@ -821,7 +821,7 @@ form {
   margin: 0;
 }
 
-.fiedset {
+fieldset {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
